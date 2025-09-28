@@ -39,8 +39,7 @@ const generateReply = async (req, res) => {
     // Generate AI reply
     const aiReply = await deepseekService.generateReply(emailDetails, tone);
 
-    // Save draft (you can implement this later with MongoDB)
-    // await saveDraftReply(req.user.id, emailId, aiReply);
+ 
 
     res.json({
       success: true,
@@ -71,8 +70,7 @@ const generateReply = async (req, res) => {
 
 const regenerateReply = async (req, res) => {
   try {
-    // This is essentially the same as generateReply
-    // but we can add different logic later (like excluding previous attempts)
+
     await generateReply(req, res);
   } catch (error) {
     res.status(500).json({
