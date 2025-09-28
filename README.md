@@ -16,7 +16,7 @@ Draftly is an intelligent email assistant that uses AI to help you draft profess
 
 ### Prerequisites
 
-- Node.js (v14 or higher)
+- Node.js 
 - MongoDB
 - Google Cloud Console project with Gmail API enabled
 - DeepSeek API account
